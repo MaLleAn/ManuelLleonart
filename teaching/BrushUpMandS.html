@@ -100,8 +100,23 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
      <link href="Styles/style.css" rel=StyleSheet> 
 
     <style>
-		body, html {
-			height: 100%;
+	    aside, article, footer, section, nav, header{
+		    display:block;
+		    margin:0;
+		    padding:0;
+	    }, html, body{
+		    margin:0;
+		    padding:0;
+	    }
+		    
+		body{
+			margin:0 auto;
+			padding:0;
+			width: 960px;
+			
+	    }
+	    , html {
+			background: #ECFBFB 
 		}
 		.bgimg {
 			background-position: 20% 20%;
@@ -128,16 +143,42 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
 		}		.menu {
 			display: none;
 		}
+		.myDiv {
+  			border: 5px outset lightblue;
+  			background-color: white;    
+  			text-align: center;
+			}
+	    .bottom-three {
+     margin-bottom: 3cm;
+  }
+	    
+	    article{
+		    height: 420px;
+		    width: 640px;
+		    float:right;
+	    }
+	    aside{
+		    height: 420px;
+		    width: 300px;
+		    float:left;
+	    }
+	    salto{
+		    background: #FF0000;
+		    height:5px;
+	    }
+	    footer{
+		    height:60px;
+	    }
     </style>
     
 </head>
-	
+	<body>
 	 <!-- Links (sit on top and menu on small screens) -->
     <div class="w3-bar-item">
 		<div class="w3-row w3-padding w3-white">
             <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Home</a>
-	<!--		<a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Research</a>
-			<a href="cv.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">CV</a> -->
+	<!--		<a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Research</a>-->
+			<a href="cv.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">CV</a> 
 			<a href="teaching.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Teaching</a>
 		<!--	<a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Resources</a> -->
 			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large"
@@ -147,11 +188,10 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
 		<!-- Navbar on small screens -->
 		<div id="navibar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-white">
             <a href="index.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">Home</a>
-		<!--	<a href="research.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">Research</a>
-			<a href="cv.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">CV</a> -->
+		<!--	<a href="research.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">Research</a> -->
+			<a href="cv.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">CV</a> 
 			<a href="teaching.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">Teaching</a>
 		<!--	<a href="resources.html" class="w3-bar-item w3-button w3-block w3-text-black w3-col s1">Resources</a> -->
 		</div>
     </div>
-    
-
+	</body>
