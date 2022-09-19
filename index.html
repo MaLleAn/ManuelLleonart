@@ -196,9 +196,10 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
 		<!--	<a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Resources</a> -->
 </div>
 			
-	<button class="w3-button w3-teal w3-xlarge w3-white" onclick="w3_open()">☰</button>
+	
 	  <!-- Links (sit on top and menu on small screens) -->
     		<div class="w3-row w3-padding w3-white">
+			<button class="w3-button w3-teal w3-xlarge w3-white" onclick="w3_open()">☰</button>
             <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Home</a>
 	<!--		<a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">Research</a>-->
 			<a href="cv.html" class="w3-bar-item w3-button w3-hide-small w3-block w3-text-black w3-col s1">CV</a> 
@@ -280,6 +281,15 @@ function w3_open() {
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
+}
+	
+	function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 </body>
