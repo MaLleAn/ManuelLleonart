@@ -204,33 +204,7 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
     <h1>My Page</h1>
   </div>
 </div>
-
-<img src="img_car.jpg" alt="Car" style="width:100%">
-
-<div class="w3-container">
-<p>In this example, the sidebar is hidden (style="display:none")</p>
-<p>It is shown when you click on the menu icon in the top left corner.</p>
-<p>When it is opened, it shifts the page content to the right.</p>
-<p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
-</div>
-
-</div>
-
-<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-</script>
-
-	 
+ 
 <header>
 		<!-- About Container -->
 		<div class="myDiv">
@@ -288,6 +262,24 @@ function w3_close() {
 					Barcelona (Spain)
 	</p></footer></center>
 <salto> <p></p></salto>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+	
 	
 
 </body>
