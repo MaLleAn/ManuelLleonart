@@ -289,7 +289,12 @@ Manuel Lleonart Anguix is a student at the International Doctorate of Economic A
 		
 		<script>
 document.getElementsByClassName("tablink")[0].click();
-
+var modal = document.getElementById('id01');			
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 function openCity(evt, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("city");
