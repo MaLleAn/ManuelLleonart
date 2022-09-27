@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>M. Lleonart Anguix</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+a:visited {
+  color: black;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Images/Wallpaper.jpg");
+  opacity: 75%;
+  min-height: 50%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none;z-index:5" id="mySidebar">
+
+<hr>
+    <p><center><span style="font-size: 20px"></span><b> Menu</b></center></p>
+
+<hr>
+  <div class="w3-row w3-padding w3-black">
+      <a href="Index.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Home</a>
+      <a href="cv.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">CV</a>
+      <a href="research.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Research</a>
+      <a href="teaching.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Teaching</a>
+      <a href="Others.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Others</a>
+      <a href="Index.html#where" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Contact</a>
+  </div>
+  </div>
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+  <div class="w3-col s2">
+      <button class="w3-button w3-block w3-black" onclick="w3_open()">☰</button>
+    </div>
+<div class="w3-col w3-right s2">
+		<div class="w3-bar>">
+            <a href="mailto:manuel.lleonart@bse.eu"><button class="w3-bar-item w3-button w3-black "><i class="fa fa-envelope" style="font-size:16px"></i></button></a>
+            <a href="https://github.com/MaLleAn"><button class="w3-bar-item w3-button w3-black"><i class="fa fa-brands fa-github" style="font-size:16px"></i></button></a>
+            <a href="https://www.linkedin.com/in/manuel-lleonart-anguix-256b08a6/?originalSubdomain=es"><button class="w3-bar-item w3-button w3-black"><i class="fa fa-brands fa-linkedin" style="font-size:16px"></i></button></a>
+        </div>
+</div>
+</div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Manuel <span class="w3-hide-small">Lleonart</span> Anguix</span>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag" style="font-size:10px"> Universitat Aut&ogravenoma de Barcelona </span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <b><span class="w3-text-white"> IDEA </span></b>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About me</span></h5>
+    <article>		
+				I am a PhD candidate in Economic Analysis at <a href="https://www.uab.cat/"> Universitat Aut&ograve;noma de Barcelona</a> and <a href="https://www.bse.eu/"> Barcelona School of Economics</a> (IDEA Graduate Program).
+				</p>
+				
+			My main interests are <i> Political Economy</i>, <i> Networks </i> and <i> Game Theory </i>.
+				</p>
+	</article>
+   
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:28px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contact me</span></h5>
+
+      <div class="w3-row">
+
+    <!-- Hide this text on small devices -->
+    <!--<span class="w3-col m6 w3-hide-small w3-padding-large">-->
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Manuel Lleonart</b></p><br>
+      <img src="Images/foto_Manuel.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+      <br></br>
+
+    <!--</span>-->
+	<p><span class="label"Email><i class="fa fa-envelope" style="font-size:16px"></i>  <u>Email</u>:</span></p>
+      
+		<p><a href="mailto:manuel.lleonart@bse.eu" class="logo"> manuel.lleonart@bse.eu</a></p>
+		<p><i class="fa fa-solid fa-user"></i> <u>Address</u>:</p>
+					<span style="font-size:10px"> Facultat d&#39;Economia i Empresa                             <br>
+                                        Universitat Aut&ograve;noma de Barcelona                      <br>
+					Edifici B &mdash; Campus de Bellaterra                        <br>
+					08193 Bellaterra                                              <br>
+					Cerdanyola del Vall&egrave;s                                  <br>
+					Barcelona (Spain)
+	</p>
+    </span>
+  </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-22 w3-small">
+  <p><a href="https://www.iae.csic.es/"> Institut d'Anàlisi Economic (IAE)</a></p>
+  <p><a href="https://www.uabidea.eu/">International Doctorate of Economic Analysis (IDEA)</a></p>
+  <p><a href="https://bse.eu/">Barcelona School of Economics (BSE)</a></p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
