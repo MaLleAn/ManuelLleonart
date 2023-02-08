@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>M. Lleonart Anguix</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Wallpaper.jpg");
+  min-height: 75%;
+}
+a:visited {
+  color: black;
+}
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none;z-index:5" id="mySidebar">
+
+<hr>
+    <p><center><span style="font-size: 20px"></span><b> Menu</b></center></p>
+
+<hr>
+  <div class="w3-row w3-padding w3-black">
+      <a href="index.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Home</a>
+      <a href="cv.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">CV</a>
+      <a href="research.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Research</a>
+      <a href="teaching.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Teaching</a>
+      <a href="others.html" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Others</a>
+      <a href="index.html#where" class="w3-button w3-block w3-black w3-border  w3-hover-text-red">Contact</a>
+  </div>
+  </div>
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+  <div class="w3-col s2">
+      <button class="w3-button w3-block w3-black" onclick="w3_open()">☰</button>
+    </div>
+<div class="w3-col w3-right s2">
+		<div class="w3-bar>">
+            <a href="mailto:manuel.lleonart@bse.eu"><button class="w3-bar-item w3-button w3-black "><i class="fa fa-envelope" style="font-size:16px"></i></button></a>
+            <a href="https://github.com/MaLleAn"><button class="w3-bar-item w3-button w3-black"><i class="fa fa-brands fa-github" style="font-size:16px"></i></button></a>
+            <a href="https://www.linkedin.com/in/manuel-lleonart-anguix-256b08a6/?originalSubdomain=es"><button class="w3-bar-item w3-button w3-black"><i class="fa fa-brands fa-linkedin" style="font-size:16px"></i></button></a>
+        </div>
+</div>
+</div>
+</div>
+<!-- Body of the Web -->
+<br></br>
+<center>
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+        <div class="w3-container">
+        <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-chalkboard-user fa-fw w3-margin-right w3-xlarge w3-text-black"></i>Instructor</h3>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>An Intermediate Course in Mathematics and Statistics - Brush Up Course</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2021 & 2022 </h6>
+          <a href="https://bse.eu/study/masters-programs/data-science-decision-making">Master in Data Science for Decision-Making - Barcelona School of Economics</a>
+<p>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-border-black w3-round-large"> Content</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4  w3-round-xlarge">
+      <header class="w3-container w3-black">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Brush Up - Data Science for Decision-Making</h2>
+      </header>
+      <div class="w3-container">
+          <div class="w3-row w3-border-bottom">
+       <a href="javascript:void(0)" onclick="openCity(event, 'Content');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Lecture Notes</div>
+    </a>
+       <a href="javascript:void(0)" onclick="openCity(event, 'PSETs');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Problem Sets</div>
+    </a>
+       <a href="javascript:void(0)" onclick="openCity(event, 'Exams');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Exams</div>
+    </a>
+  </div>
+
+  <div id="Content" class="w3-container city">
+<h3>Lecture Notes </h3>
+	<p>  <a href="\Files\Brush-Up.BSE\Brush-Up.pdf">Lecture Notes</a></p>
+  </div>
+
+  <div id="PSETs" class="w3-container city">
+   <div class="w3-bar-block w3-border-bottom">
+   <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET I')" >PSET I</button>
+       <div id="PSET I" class="w3-container city"  style="display:none">
+    <h3>Problem Set I - Matrices</h3>
+	 <p> <a href="\Files\Brush-Up.BSE\1. Matrix exercises.pdf">Problem Set I - Matrices</a></p>
+  </div>
+   <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET II')">PSET II and III</button>
+
+    <div id="PSET II" class="w3-hide">
+        <h3>Problem Set II and III - Calculus</h3>
+	 <p> <a href="\Files\Brush-Up.BSE\2. Calculus exercises.pdf">Problem Set II and III - Calculus </a></p>
+	  <h4> Solutions </h4>
+	  <p> <a href="\Files\Brush-Up.BSE\2. Calculus exercises - Solutions.pdf">Problem Set II and III - Calculus</a></p>
+
+  </div>
+       <!--<button class="tablink w3-bar-item w3-button  w3-bottombar w3-hover-light-grey w3-padding" onclick="openCity(event, 'PSET III')">PSET III</button>-->
+   <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET IV')">PSET IV</button>
+   <div id="PSET IV" class="w3-hide">
+<h3>Problem Set IV - Probability</h3>
+	<p>  <!--<a href="BrushUP.BSE/">Problem Set IV - Probability </a>--></p>
+	  <h4> Solutions </h4>
+	  <p> <a href="\Files\Brush-Up.BSE\4. Probability - Solutions.pdf">Problem Set IV - Probability</a></p>
+
+  </div>
+       <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET V')">PSET V</button>
+   <div id="PSET V" class="w3-hide">
+<h3>Problem Set V - Discrete Random Variables </h3>
+<p><a href="\Files\Brush-Up.BSE\5. Probability Exercises - Discrete Variables.pdf">Problem Set V - Discrete Variables</a></p>
+	  <h4> Solutions </h4>
+	  <p> <a href="\Files\Brush-Up.BSE\5. Probability Exercises - Solutions.pdf">Problem Set V - Discrete Variables</a></p>
+
+  </div>
+       <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET VI')">PSET VI</button>
+   <div id="PSET VI" class="w3-hide">
+<h3>Problem Set VI - Continuous Random Variables </h3>
+<p><a href="\Files\Brush-Up.BSE\6. Probability Exercises - CRV and JD.pdf">Problem Set VI - Continuous Random Variables</a></p>
+
+	  <h4> Solutions </h4>
+	  <p> <a href="\Files\Brush-Up.BSE\6. Probability Exercises - Continuous Random Variable and random Vectors.pdf">Problem Set V - Continuous Random Variables</a></p>
+
+  </div>
+       <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET VII')">PSET VII</button>
+   <div id="PSET VII" class="w3-hide">
+ <h3>Problem Set VII - Expectations </h3>
+	 <p> <a href="\Files\Brush-Up.BSE\7. Probability Exercises - Expectations.pdf">Problem Set VII - Expectations</a></p>
+
+  </div>
+       <button class="tablink w3-bar-item w3-button w3-bottombar w3-hover-light-grey w3-padding" onclick="acordionfun('PSET VIII')">PSET VIII</button>
+       <div id="PSET VIII" class="w3-hide">
+<h3>Problem Set VIII - Sample Information</h3>
+	<p>  <a href="\Files\Brush-Up.BSE\8. Statistic Exercises - Sample Information.pdf">Problem Set VIII - Sample Information</a></p>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+              <a href="/Files/Evaluations/BrushUp-21DSDM-Evaluations.pdf"><button class="w3-btn w3-border w3-border-black w3-round-large">Evaluations</button> </a>
+        </p>
+        </div>
+        </div>
+
+        <div class="w3-container">
+          <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-chalkboard-user fa-fw w3-margin-right w3-xlarge w3-text-black"></i>Teaching Assistant</h3>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Probability and Statistics</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2022</h6>
+          <a href="https://www.uabidea.eu/"><p>M.Res. in Economic Analysis (IDEA) at UAB</p></a>
+          <p>Professor: <a href="http://pareto.uab.es/jcaballe/"> Jordi Caballé</a></p>
+          <hr>
+        </div>
+          <div class="w3-container">
+          <h5 class="w3-opacity"><b> Game Theory</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2021</h6>
+          <a href="https://www.uabidea.eu/"><p>M.Res. in Economic Analysis (IDEA) at UAB</p></a>
+          <p>Professor: <a href="https://sites.google.com/view/jordi-masso/home?authuser=0"> Jordi Massó</a></p>
+          <p><a href="/Files/Evaluations/2021-2022 Game Theory.pdf"><button class="w3-button w3-white w3-border w3-border-black w3-round-large w3-hover-sand"> Evaluations </button> </a> </p>
+          <hr>
+        </div>
+          <div class="w3-container">
+          <h5 class="w3-opacity"><b>Networks: Models and Applications</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2021</h6>
+          <a href="https://bse.eu/study/masters-programs/data-science-decision-making">Master in Data Science for Decision-Making - Barcelona School of Economics</a>
+          <p>Professor: <a href="https://sites.google.com/site/paumilan/"> Pau Milán</a></p>
+          <p><a href="/Files/Evaluations/NetworksII-21DSDM-Manuel Lleonart.pdf"><button class="w3-button w3-white w3-border w3-border-black w3-round-large w3-hover-sand"> Evaluations </button> </a> </p>
+          <hr>
+        </div>
+          <div class="w3-container">
+          <h5 class="w3-opacity"><b>Networks: Concepts and Algorithms</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2021</h6>
+          <a href="https://bse.eu/study/masters-programs/data-science-decision-making">Master in Data Science for Decision-Making - Barcelona School of Economics</a>
+          <p>Professor: <a href="https://sites.google.com/site/paumilan/"> Pau Milán</a></p>
+          <p><a href="/Files/Evaluations/NetworksI-21DSDM-Manuel Lleonart.pdf"><button class="w3-button w3-white w3-border w3-border-black w3-round-large w3-hover-sand"> Evaluations </button> </a> </p>
+          <hr>
+        </div>
+          <div class="w3-container">
+          <h5 class="w3-opacity"><b>Optimization</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2021</h6>
+          <a href="https://www.uabidea.eu/"><p>M.Res. in Economic Analysis (IDEA) at UAB</p></a>
+          <p>Professor: <a href="https://sites.google.com/site/charapapioti/home"> Chara Papioti</a></p>
+          <p><a href="/Files/Evaluations/2021-2022 Optimization.pdf"><button class="w3-button w3-white w3-border w3-border-black w3-round-large w3-hover-sand"> Evaluations </button> </a> </p>
+          <hr>
+        </div>
+      </div>
+      </div>
+    </center>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-22 w3-small">
+  <p><a href="https://www.iae.csic.es/"> Institut d'Anàlisi Economic (IAE)</a></p>
+  <p><a href="https://www.uabidea.eu/">International Doctorate of Economic Analysis (IDEA)</a></p>
+  <p><a href="https://bse.eu/">Barcelona School of Economics (BSE)</a></p>
+</footer>
+
+<script>
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function acordionfun(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+document.getElementsByClassName("tablink")[0].click();
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
