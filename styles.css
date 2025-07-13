@@ -202,3 +202,19 @@ footer {
     text-align: left;
   }
 }
+
+.custom-eval-btn {
+  background-color: transparent;
+  color: black;
+  border: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease color 0.3s white;
+}
+
+.custom-eval-btn:hover {
+  background-color: #005f73; /* slightly blue on hover */
+}
+
