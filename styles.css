@@ -168,3 +168,37 @@ footer {
 .paper-entry {
   margin-bottom: 1.5rem; /* or adjust to 1rem, 2rem depending on your taste */
 }
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Style image in desktop view */
+.about-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Make the text container flexible */
+.about-text {
+  flex: 1;
+}
+
+/* Responsive mobile adjustments */
+@media (max-width: 600px) {
+  .about-container {
+    display: block;
+    text-align: center;
+  }
+  .about-img {
+    max-width: 150px;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  .about-text {
+    text-align: left;
+  }
+}
