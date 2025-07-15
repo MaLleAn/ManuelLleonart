@@ -177,10 +177,15 @@ footer {
 
 /* Style image in desktop view */
 .about-img {
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
   border-radius: 5px;
 }
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Make the text container flexible */
 .about-text {
