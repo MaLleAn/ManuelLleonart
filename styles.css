@@ -32,6 +32,23 @@ header.hero {
   padding: 3rem 1rem;
 }
 
+header.hero {
+      padding: 1rem 1rem;   /* was larger; tweak to taste */
+    }
+    .hero-text h1 {
+      margin: 0;
+      font-size: 2rem;        /* down from ~2.5rem */
+      line-height: 1.2;
+    }
+    .hero-text p {
+      margin: 0.25rem 0 0.5rem;
+      font-size: 1rem;
+    }
+    /* Optional: tighten spacing inside */
+    .hero-content {
+      gap: 0.75rem;
+    }
+
 .hero-content {
   display: flex;
   flex-wrap: wrap;
@@ -41,10 +58,10 @@ header.hero {
 }
 
 .profile-img {
-  flex: 0 0 150px;
+  flex: 0 0 110px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   margin-right: 1.5rem;
 }
@@ -145,7 +162,7 @@ footer {
   color: var(--accent-color);
 }
   .bottom-three {
-     margin-bottom: 1cm;
+     margin-bottom: 0.5cm;
   }
 
 .paper-abstract {
@@ -199,7 +216,7 @@ footer {
     text-align: center;
   }
   .about-img {
-    max-width: 150px;
+    max-width: 110px;
     margin: 0 auto 1rem;
     display: block;
   }
