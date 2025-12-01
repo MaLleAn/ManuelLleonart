@@ -6,6 +6,22 @@
   <title>Manuel Lleonart – Ph.D. Candidate in Economics</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- Favicon, LinkedIn icon, etc. -->
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const currentHost = window.location.host;
+
+  document.querySelectorAll("a[href]").forEach(link => {
+    const url = link.getAttribute("href");
+
+    // If the link starts with http(s) and is NOT your own domain → external
+    if (url.startsWith("http") && !url.includes(currentHost)) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+});
+</script>
+
 </head>
 <body>
   <header class="hero">
@@ -332,6 +348,7 @@ My research interests are <b>Organizational Design, Microeconomic Theory, and In
 
 
 <!-- google-site-verification: googlea3378a3c2c42a919.html -->
+
 
 
 
