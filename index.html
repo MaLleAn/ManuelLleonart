@@ -339,24 +339,24 @@ My research interests are <b>Organizational Design, Microeconomic Theory, and In
 
 
 <script>
-  function toggleAbstract(element) {
-    const abstract = element.nextElementSibling;
-    if (abstract.style.display === "block") {
-      abstract.style.display = "none";
-    } else {
-      abstract.style.display = "block";
-    }
-  }
-
   function toggleAbstract(el) {
-    const abstract = el.nextElementSibling;
-    abstract.style.display = abstract.style.display === "block" ? "none" : "block";
+    // Go up to the <li> that contains this paper
+    const entry = el.closest('.paper-entry');
+    if (!entry) return;
+
+    // Find the abstract inside this paper
+    const abstract = entry.querySelector('.paper-abstract');
+    if (!abstract) return;
+
+    // Toggle display
+    abstract.style.display = (abstract.style.display === "block") ? "none" : "block";
   }
 </script>
 
 
 
 <!-- google-site-verification: googlea3378a3c2c42a919.html -->
+
 
 
 
