@@ -272,3 +272,14 @@ footer {
   text-decoration: underline;
   color: var(--primary-color);
 }
+
+.collapsible-heading {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.collapsible-heading:hover {
+  text-decoration: underline;
+  color: #003366; /* a darker blue that fits your palette */
+}
+
