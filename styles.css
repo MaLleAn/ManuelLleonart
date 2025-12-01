@@ -260,3 +260,15 @@ footer {
 .social-icon:hover {
   transform: scale(1.15);
 }
+
+.abstract-link {
+  color: var(--accent-color);
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+
+.abstract-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
