@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+<script>
+  function toggleSection(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.style.display === "none" || el.style.display === "") {
+      el.style.display = "grid";
+    } else {
+      el.style.display = "none";
+    }
+  }
+</script>
 
 </head>
 <body>
@@ -351,6 +362,7 @@ My research interests are <b>Organizational Design, Microeconomic Theory, and In
 
 
 <!-- google-site-verification: googlea3378a3c2c42a919.html -->
+
 
 
 
